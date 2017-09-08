@@ -12,6 +12,7 @@ i2c = onionI2C.OnionI2C()
 while True:
   data = [0x10]
   i2c.write(0x29, data)
+  time.sleep(DL1)
  # AD7999 address, 0x29(41)
 # Read data back, 2 bytes
 # raw_adc MSB, raw_adc LSB
@@ -22,3 +23,4 @@ while True:
 
 # Output data to screen
   print "Digital Value of Analog Input : %d" %raw_adc
+  time.sleep(DL)
