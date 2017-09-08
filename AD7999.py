@@ -5,8 +5,8 @@
 #https://www.controleverything.com/content/Analog-Digital-Converters?sku=AD7999_I2CADC
 from OmegaExpansion import onionI2C
 import time
-DL = 0
-DL1 = 0.01
+DL = 0.5
+DL1 = 0.5
 # Get I2C bus
 i2c = onionI2C.OnionI2C()
 while True:
